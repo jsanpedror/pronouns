@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta chartset="UFT-8">
+<title>Pronouns</title>
+<link href="pronouns.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<section id="lessonSec">
+    <h1>Subject / Object</h1>
+    <h2>Pronouns</h2>
+    <p>Pronouns are used to replace nouns. Nouns can be either the subject or the object of a sentence.</p>
+    <p>We use a <strong>subject pronoun</strong> to replace a noun acting as the subject of a sentence e.g.<br/> <strong>Ann</strong> loves Tom.<br/>In this case the noun Ann is the subject of the sentence and it can be replaced by <strong>she</strong><br/><strong>She</strong> loves Tom.</p>
+    <p>We use an object pronoun to replace a noun acting as the object of a sentence e.g.<br/>Tom loves <strong>Ann</strong>.<br/>In this case the noun Ann is the object of the sentence and it can be replaced by <strong>her</strong>.<br/>Tom loves <strong>her</strong>.</p>
+    <div class="Table">
+    <div class="Title">
+      <p>Subject / Object pronouns</p>
+    </div>
+    <div class="Heading">
+        <div class="Cell">
+            <p>Subject</p>
+        </div>
+        <div  class="Cell">
+            <p>Verb</p>
+        </div>
+        <div class="Cell">
+            <p>Object</p>
+        </div>
+    </div>
+    <div class="Row">
+        <div class="Cell">
+            <p>I</p>
+            <p>you</p>
+            <p>he</p>
+            <p>she</p>
+            <p>it</p>
+            <p>we</p>
+            <p>you</p>
+            <p>they</p>
+        </div>
+        <div id="verbDiv" class="Cell">
+            <p>Verb</p>
+        </div>
+        <div class="Cell">
+            <p>me</p>
+            <p>you</p>
+            <p>him</p>
+            <p>her</p>
+            <p>it</p>
+            <p>us</p>
+            <p>you</p>
+            <p>them</p>
+        </div>
+    </div>
+   </div>
+    <button id="continueBtn" onclick="continueButton()">Continue</button>
+  </section>
+  
+  <section id="exerciseSec">
+    <button id="backbtn" onclick="backButton()">Back</button>
+    <p>Write the subject and object pronouns that match the pictures.</p>
+<div class="Table">
+    <div class="Title">
+        </div>
+    <div class="Row">
+        <div id="computerSub" class="Cell">
+            
+        </div>
+        <div class="Cell">
+            <img src="arrow.png"/>
+        </div>
+        <div id="computerOb" class="Cell">
+            
+        </div>
+    </div>
+    <div class="Row">
+        <div class="Cell">
+          <input type="text" id="userSub" maxlength="5" placeholder="Subject pronoun" max="5"/>
+        </div>
+        <div class="Cell">
+            <p id="givenVerb">verb</p>
+        </div>
+        <div class="Cell">
+            <input type="text" id="userObj" maxlength="5" placeholder="Object pronoun" max="5"/>
+        </div>
+    </div>
+</div>
+    <button id="nextBtn" onclick="nextButton()">Next</button>
+    <button id="checkBtn" onclick="checkButton()">Check</button>
+  </section>
+  <script src="pronouns.js"></script>
+</body>
+
+
+</html>
